@@ -1,7 +1,7 @@
 import axios from "axios"
 import queryString from 'query-string'
 
-const baseUrl = 'http://127.0.0.1:3000/api/'
+const baseUrl = 'http://127.0.0.1:4000/api/'
 const getToken = () => localStorage.getItem('token')
 
 const axiosClient = axios.create({

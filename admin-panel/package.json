@@ -7,12 +7,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@babel/core": "^7.25.2",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@fontsource/roboto": "^4.5.1",
     "@mui/icons-material": "^5.2.4",
     "@mui/lab": "^5.0.0-alpha.60",
     "@mui/material": "^5.2.4",
+    "@mui/system": "^6.1.1",
     "@mui/x-data-grid": "^5.2.0",
     "axios": "^0.24.0",
     "chart.js": "^3.6.2",
@@ -21,12 +23,13 @@
     "react": "^17.0.2",
     "react-chartjs-2": "^4.0.0",
     "react-dom": "^17.0.2",
+    "react-native-svg": "^15.7.1",
     "react-qr-code": "^2.0.3",
     "react-qr-reader": "^2.2.1",
     "react-router-dom": "^6.1.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",
-    "vite": "^2.7.2"
+    "vite": "^5.4.8"
   }
 }
