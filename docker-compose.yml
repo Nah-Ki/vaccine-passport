@@ -4,10 +4,8 @@ services:
       context: ./server
     ports:
       - "4000:4000"
-    depends_on:
-      - mongodb
     environment:
-      - MONGODB_URI=mongodb://mongodb:27017/vaccine-passport
+      - MONGODB_URI=mongodb+srv://vaccine-passport:vaccine-passport@cluster0.7vbqt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 
   frontend:
     build:
@@ -15,9 +13,4 @@ services:
     ports:
       - "3001:5000"
     environment:
-      - REACT_APP_API_URL=http://localhost:3001  # Use the appropriate URL for API requests
-
-  mongodb:
-    image: mongo
-    ports:
-      - "27017:27017"
+      - REACT_APP_API_URL=http://127.0.0.1:4000/api/  # Use the appropriate URL for API requests
