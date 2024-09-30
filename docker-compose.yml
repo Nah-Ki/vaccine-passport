@@ -1,0 +1,23 @@
+services:
+  backend:
+    build:
+      context: ./server
+    ports:
+      - "4000:4000"
+    depends_on:
+      - mongodb
+    environment:
+      - MONGODB_URI=mongodb://mongodb:27017/vaccine-passport
+
+  frontend:
+    build:
+      context: ./admin-panel
+    ports:
+      - "3001:5000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:3001  # Use the appropriate URL for API requests
+
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
