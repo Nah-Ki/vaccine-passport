@@ -11,6 +11,6 @@ services:
     build:
       context: ./admin-panel
     ports:
-      - "3001:5000"
+      - "3001:3001"
     environment:
       - REACT_APP_API_URL=http://127.0.0.1:4000/api/  # Use the appropriate URL for API requests
